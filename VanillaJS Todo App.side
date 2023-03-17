@@ -1,0 +1,607 @@
+{
+  "id": "e520ef61-2708-4b29-9c63-b3142261436e",
+  "version": "2.0",
+  "name": "VanillaJS Todo App",
+  "url": "https://todomvc.com/examples/vanillajs/",
+  "tests": [{
+    "id": "3ef7f463-512b-4061-a68c-54d0f551682f",
+    "name": "1. Add new tasks",
+    "commands": [{
+      "id": "de980aa8-b615-44ae-a94f-f77a394c952a",
+      "comment": "",
+      "command": "open",
+      "target": "https://todomvc.com/examples/vanillajs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b19b404c-f271-4aff-b4bf-56eed57bd7a2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90a36009-75df-4458-8ee1-75318512a6c0",
+      "comment": "",
+      "command": "type",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "toast bread"
+    }, {
+      "id": "215e59d2-8388-4df3-9ed9-46b94c024d6e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "4a5080e9-e056-402b-946c-ecb3f4041618",
+      "comment": "",
+      "command": "type",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "prepare ingredients"
+    }, {
+      "id": "805978bd-5e31-465e-963c-a6f76a37546e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "9bcd022d-2922-4cdd-a7e2-bd21e002acd1",
+      "comment": "",
+      "command": "type",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "assemble sandwhich"
+    }, {
+      "id": "9f046e20-2a00-4573-9866-1651204ec044",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "25bf25dd-cfe3-4a26-9d68-7375561ba6b5",
+      "comment": "",
+      "command": "type",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "cut and serve"
+    }, {
+      "id": "1e8a17cf-ed85-498c-bc6e-221d424d62dd",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "09b988e5-f919-4f9b-85df-8d5599d7c629",
+    "name": "2. Edit task",
+    "commands": [{
+      "id": "a77fc6fc-a3ed-4bed-8cd1-c4939d0e21ed",
+      "comment": "",
+      "command": "open",
+      "target": "https://todomvc.com/examples/vanillajs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e66944cb-e8f0-4524-a064-4f795a17b35f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1680x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a71ab14c-2c74-4b81-8175-927e3d59ceac",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) label",
+      "targets": [
+        ["css=li:nth-child(1) label", "css:finder"],
+        ["xpath=//div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'toast bread')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42a9f101-0f01-4ecf-9bdf-29dcdecb9582",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) label",
+      "targets": [
+        ["css=li:nth-child(1) label", "css:finder"],
+        ["xpath=//div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'toast bread')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b1f648a-4806-4e7a-ba02-37b205ab81a0",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=li:nth-child(1) label",
+      "targets": [
+        ["css=li:nth-child(1) label", "css:finder"],
+        ["xpath=//div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'toast bread')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6beefd00-1e4b-47a4-952e-1b5409a36fae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.edit",
+      "targets": [
+        ["css=.edit", "css:finder"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79e27c55-e116-4d47-8b3c-a4e0ee3992bc",
+      "comment": "",
+      "command": "type",
+      "target": "css=.edit",
+      "targets": [
+        ["css=.edit", "css:finder"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": "Toast bread"
+    }, {
+      "id": "bde3bcbd-fe64-4684-ba86-abcaa2d0a4c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) label",
+      "targets": [
+        ["css=li:nth-child(2) label", "css:finder"],
+        ["xpath=//li[2]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'prepare ingredients')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8151f22-3ec7-45c2-a3f7-d2ae5c127c22",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) label",
+      "targets": [
+        ["css=li:nth-child(2) label", "css:finder"],
+        ["xpath=//li[2]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'prepare ingredients')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f646661-0246-4f15-80c6-7a16b5e96f4a",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=li:nth-child(2) label",
+      "targets": [
+        ["css=li:nth-child(2) label", "css:finder"],
+        ["xpath=//li[2]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'prepare ingredients')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "704ea483-be28-48c4-91ce-01910b5c7c7a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.edit",
+      "targets": [
+        ["css=.edit", "css:finder"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8fef422-d1d0-4728-b913-6230443d9322",
+      "comment": "",
+      "command": "type",
+      "target": "css=.edit",
+      "targets": [
+        ["css=.edit", "css:finder"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": "prepare Ingredients"
+    }, {
+      "id": "1714fc1a-0734-4ddf-91d8-3a8a587790f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) label",
+      "targets": [
+        ["css=li:nth-child(3) label", "css:finder"],
+        ["xpath=//li[3]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'assemble sandwhich')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5e9a9c6-429b-47d1-b751-490511be88ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) label",
+      "targets": [
+        ["css=li:nth-child(3) label", "css:finder"],
+        ["xpath=//li[3]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'assemble sandwhich')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "88597648-704a-4d8b-bb0c-d4ab3da5200e",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=li:nth-child(3) label",
+      "targets": [
+        ["css=li:nth-child(3) label", "css:finder"],
+        ["xpath=//li[3]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'assemble sandwhich')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bc4bb57-553c-4fdd-8943-24f28a47857a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.edit",
+      "targets": [
+        ["css=.edit", "css:finder"],
+        ["xpath=//li[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da4e84fd-3c77-4ed0-9c71-c6764bbb0785",
+      "comment": "",
+      "command": "type",
+      "target": "css=.edit",
+      "targets": [
+        ["css=.edit", "css:finder"],
+        ["xpath=//li[3]/input", "xpath:position"]
+      ],
+      "value": "Assemble sandwhich"
+    }, {
+      "id": "6216d8c4-7e51-4585-ae59-e5f793185f68",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(4) label",
+      "targets": [
+        ["css=li:nth-child(4) label", "css:finder"],
+        ["xpath=//li[4]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'cut and serve')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "690eb4a5-cd65-40cf-9b62-022c48c9ae8c",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(4) label",
+      "targets": [
+        ["css=li:nth-child(4) label", "css:finder"],
+        ["xpath=//li[4]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'cut and serve')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "279dde60-337f-4d40-a882-21ec945e6089",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=li:nth-child(4) label",
+      "targets": [
+        ["css=li:nth-child(4) label", "css:finder"],
+        ["xpath=//li[4]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'cut and serve')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "05b0f47a-0734-4232-9d39-85dd9f049108",
+      "comment": "",
+      "command": "click",
+      "target": "css=.edit",
+      "targets": [
+        ["css=.edit", "css:finder"],
+        ["xpath=//li[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02456061-0c78-4ac9-8f91-c1931afc8162",
+      "comment": "",
+      "command": "type",
+      "target": "css=.edit",
+      "targets": [
+        ["css=.edit", "css:finder"],
+        ["xpath=//li[4]/input", "xpath:position"]
+      ],
+      "value": "Cut and serve"
+    }, {
+      "id": "47c343e1-c7b9-46a7-8816-0b94b5b3d849",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) label",
+      "targets": [
+        ["css=li:nth-child(3) label", "css:finder"],
+        ["xpath=//li[3]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Assemble sandwhich')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f8086d33-46e2-4f2a-b46e-7d986ca0b7e5",
+    "name": "3. Mark a task as complete",
+    "commands": [{
+      "id": "0372792f-4a62-4dca-aa65-4e86002d4e58",
+      "comment": "",
+      "command": "open",
+      "target": "https://todomvc.com/examples/vanillajs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4405da6c-779c-4dc0-a10c-623a37280ab3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "500x413",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "378a37f0-db98-42a7-95b8-0ea831bcb65d",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) .toggle",
+      "targets": [
+        ["css=li:nth-child(1) .toggle", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[2]", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc963ab0-e39a-492d-a8e4-5ddcb40d38cb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Completed",
+      "targets": [
+        ["linkText=Completed", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Completed')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#/completed')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Completed')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "069f2dd7-5b19-4526-8191-5665e1da3bc5",
+    "name": "4. Filter task by status",
+    "commands": [{
+      "id": "d097de74-2404-433a-b598-f6ace8be6b02",
+      "comment": "",
+      "command": "open",
+      "target": "https://todomvc.com/examples/vanillajs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c87b443c-227f-4916-ab63-6bdb9f1f02ec",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1680x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "694fe1bb-9e34-4124-823e-15e7845d3370",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Active",
+      "targets": [
+        ["linkText=Active", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Active')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#/active')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Active')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d62bbaf-38e5-476d-a8bf-e574409c5e79",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Completed",
+      "targets": [
+        ["linkText=Completed", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Completed')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#/completed')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Completed')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a9c62d6-b382-4497-a372-57e22b8b70a8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=All",
+      "targets": [
+        ["linkText=All", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'All')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#/')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'All')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a78e1b3a-c438-4cac-8db3-decaa9363405",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "222236f5-e45a-4d46-b8c3-331177294ec9",
+    "name": "5. Delete a task",
+    "commands": [{
+      "id": "ca7d11d9-c2a6-42ec-8215-ed36ed62104a",
+      "comment": "",
+      "command": "open",
+      "target": "https://todomvc.com/examples/vanillajs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f31e258-e09e-48b2-a287-56618d92ef45",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1680x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffe00f8d-b681-4647-804c-f8fd881ede21",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(4) .destroy",
+      "targets": [
+        ["css=li:nth-child(4) .destroy", "css:finder"],
+        ["xpath=//li[4]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "907116d6-de6b-40b7-9659-1bb34f759ee6",
+    "name": "6. Mark all tasks as complete",
+    "commands": [{
+      "id": "d07d55f7-552c-4a60-b69b-6a2ecd1f30d9",
+      "comment": "",
+      "command": "open",
+      "target": "https://todomvc.com/examples/vanillajs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b71735e-72c7-49e9-8a62-8184e0a08e51",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1680x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3fd7ba69-ec2e-4a4e-b171-936652a1237d",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .toggle",
+      "targets": [
+        ["css=li:nth-child(2) .toggle", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[3]", "xpath:attributes"],
+        ["xpath=//li[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad75cf71-b2ee-4c31-b14e-e9672ef9d239",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) .toggle",
+      "targets": [
+        ["css=li:nth-child(3) .toggle", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[4]", "xpath:attributes"],
+        ["xpath=//li[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8caa2edb-55d5-4b07-a38e-83d2f6c3ed41",
+    "name": "7. Clear completed tasks",
+    "commands": [{
+      "id": "63cb9f10-5d6e-4c43-91e8-fcc0d63ae3d6",
+      "comment": "",
+      "command": "open",
+      "target": "https://todomvc.com/examples/vanillajs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fce028b6-18c5-4574-8fda-a2547d5dc858",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1680x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "579c6e02-6c57-4e50-bb5f-dc468f11fd83",
+      "comment": "",
+      "command": "click",
+      "target": "css=.clear-completed",
+      "targets": [
+        ["css=.clear-completed", "css:finder"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Clear completed')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9dd71938-dfb3-4741-acd2-206764b88037",
+    "name": "8. Persistence",
+    "commands": [{
+      "id": "2632d2e1-79e9-46f9-a81f-6a893d9ae7cc",
+      "comment": "",
+      "command": "open",
+      "target": "https://todomvc.com/examples/vanillajs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fda5c2ad-847e-48ff-ba2c-60cfbb956c17",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1680x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fed7f4c6-268e-4a22-896c-72ceeb3ee344",
+      "comment": "",
+      "command": "type",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "eat the sandwhich"
+    }, {
+      "id": "e79e1a05-f33e-41a0-8848-6dd4faa51e54",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }],
+  "suites": [{
+    "id": "c6b4cf2d-c7db-4a9d-8e7a-92f4914b3ad7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3ef7f463-512b-4061-a68c-54d0f551682f"]
+  }],
+  "urls": ["https://todomvc.com/examples/vanillajs/"],
+  "plugins": []
+}
